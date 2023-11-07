@@ -36,7 +36,7 @@
       <!-- Added margin for spacing -->
     </nav>
 
-    <form class="w-3/4 mx-auto" method="post">
+    <form class="w-3/4 mx-auto" method="post" action="">
       <!-- Reduced width and centered the form -->
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -51,6 +51,7 @@
             id="first-name"
             type="text"
             placeholder="Jane"
+            name="firstName"
           />
           <p class="text-red-500 text-xs italic">Please fill out this field.</p>
         </div>
@@ -66,6 +67,7 @@
             id="last-name"
             type="text"
             placeholder="Doe"
+            name="lastName"
           />
         </div>
       </div>
@@ -81,6 +83,7 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="email"
             type="email"
+            name="email"
           />
           <p class="text-gray-600 text-xs italic">
             Some tips - as long as needed
@@ -98,6 +101,7 @@
           <textarea
             class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
             id="message"
+            name="message"
           ></textarea>
           <p class="text-gray-600 text-xs italic">
             Re-size can be disabled by set by resize-none / resize-y / resize-x
@@ -109,7 +113,7 @@
         <!-- Centered the button -->
         <button
           class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-          type="button"
+          type="submit"
         >
           Send
         </button>
