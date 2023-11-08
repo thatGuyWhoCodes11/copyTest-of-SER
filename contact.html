@@ -53,6 +53,10 @@
             placeholder="Jane"
             name="firstName"
             required
+            minlength="3"
+            maxlength="12"
+            pattern="[a-zA-Z]+"
+            title="Must contain only letters, and has a length of 3-12"
           />
         </div>
         <div class="w-full md:w-1/2 px-3">
@@ -68,6 +72,10 @@
             type="text"
             placeholder="Doe"
             name="lastName"
+            minlength="3"
+            maxlength="12"
+            pattern="[a-zA-Z]+"
+            title="Must contain only letters, and has a length of 3-12"
           />
         </div>
       </div>
@@ -77,14 +85,15 @@
             class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
             for="email"
           >
-            E-mail <span class="text-red-500">*</span>
+            E-mail
           </label>
           <input
             class="appearance-none block w-full bg-gray-50/10 text-gray-100 border border-current rounded py-3 px-4 leading-tight"
             id="email"
             type="email"
             name="email"
-            required
+            pattern="([a-zA-Z\d\.\-_\+])+@([a-zA-Z0-9\d\-\[])+\.([a-zA-Z0-9]){2,8}(\.[a-zA-Z0-9]{2,8})?(\.[a-zA-Z0-9\]]{2,8})?"
+            title="((Exam+ple@example123.com123)) , ((ex_ample-123@example.com.sa))"
           />
         </div>
       </div>
@@ -94,12 +103,15 @@
             class="block uppercase tracking-wide text-gray-300 text-xs font-bold mb-2"
             for="message"
           >
-            Message
+            message <span class="text-red-500">*</span>
           </label>
           <textarea
             class="no-resize appearance-none block w-full bg-gray-50/10 text-gray-100 border border-currentrounded py-3 px-4 leading-tight h-48 resize-none"
             id="message"
             name="message"
+            required
+            maxlength="200"
+            pattern="[a-zA-Z0-9]"
           ></textarea>
         </div>
       </div>
