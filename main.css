@@ -1,40 +1,39 @@
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @font-face {
-    font-family: 'Neun';
-    src: url('NeueMachina-Regular.otf') format('opentype'); /* Adjust path as needed */
-    /* Consider adding more formats for better compatibility */
-  }
-  
-  body {
-      background-color: rgb(17,17,17); /* Dark gray color */
-      color: rgb(243,244,246); /* Light gray color for the text */
-      font-family: 'Neun', sans-serif; /* Fallback font */
-  }
-  .selected{
-    border-radius: 10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    background-color: #4a5568 ;
-  }
-  .subjects{
-    display: flex;
-    max-width: 300px;
-    margin:10px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    gap: 10px;
-    align-content: baseline;
-  }
+  font-family: "Neun";
+  src: url("NeueMachina-Regular.otf") format("opentype"); /* Adjust path as needed */
+  /* Consider adding more formats for better compatibility */
+}
+
+body {
+  background-color: rgb(17, 17, 17); /* Dark gray color */
+  color: rgb(243, 244, 246); /* Light gray color for the text */
+  font-family: "Neun", sans-serif; /* Fallback font */
+}
+.selected {
+  border-radius: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #4a5568;
+}
+.subjects {
+  display: flex;
+  max-width: 300px;
+  margin: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  gap: 10px;
+  align-content: baseline;
+}
