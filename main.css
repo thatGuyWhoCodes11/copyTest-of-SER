@@ -37,3 +37,7 @@ body {
   gap: 10px;
   align-content: baseline;
 }
+div div div:has(input[type="radio"]:checked + label) {
+  outline: 1px rgb(243 244 246) solid;
+  outline-offset: -2px;
+}
