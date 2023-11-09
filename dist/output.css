@@ -773,11 +773,6 @@ select {
   margin-bottom: 2.5rem;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .my-11 {
   margin-top: 2.75rem;
   margin-bottom: 2.75rem;
@@ -913,6 +908,10 @@ select {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -971,6 +970,11 @@ select {
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20 {
@@ -1206,15 +1210,21 @@ body {
   align-content: baseline;
 }
 
+/*contact.html gender radio buttons*/
+
 div div div:has(input[type="radio"]:checked + label) {
   outline: 1px rgb(243 244 246) solid;
   outline-offset: -2px;
 }
 
+/*contact.html language checkbox*/
+
 label:has(input[type="checkbox"]:checked) {
   outline: 1px rgb(243 244 246) solid;
   outline-offset: -2px;
 }
+
+/*feilds background color*/
 
 .bg-costume-gray {
   background-color: rgb(40, 40, 41);
@@ -1243,6 +1253,16 @@ label:has(input[type="checkbox"]:checked) {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-20:hover {
