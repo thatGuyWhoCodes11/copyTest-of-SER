@@ -42,6 +42,11 @@ div div div:has(input[type="radio"]:checked + label) {
   outline-offset: -2px;
 }
 
+label:has(input[type="checkbox"]:checked) {
+  outline: 1px rgb(243 244 246) solid;
+  outline-offset: -2px;
+}
+
 .bg-costume-gray {
   background-color: rgb(40, 40, 41);
 }
