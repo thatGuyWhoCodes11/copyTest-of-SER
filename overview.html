@@ -1,25 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="./dist/output.css">
+    <script src="./filler.js" defer=""></script>
     <title>Overview</title>
 </head>
+
 <body>
     <nav>
-    <section class=" text-xl flex flex-row items-center m-6">
-        <h1 class="flex-grow mr-10"><a href="index.html">Software Engineering Repository</a></h1>
-        <a class="mx-2 p-2 rounded-xl hover:bg-gray-700 hover:bg-opacity-20" href="about.html">about</a>
-        <a class="mx-3 p-2 rounded-xl hover:bg-gray-700 hover:bg-opacity-20" href="contact.html">contact</a>
-        <input 
-            spellcheck="false" 
-            class="flex-grow max-w-xs appearance-none rounded-lg px-3 py-2 transition-colors text-base leading-tight md:text-md bg-black/5 dark:bg-gray-50/10  placeholder-gray-500 dark:placeholder-gray-400 border border-current" 
-            type="search" 
-            placeholder="Search Repository" 
-            value="">
+        <section class=" text-xl flex flex-row items-center m-6">
+            <h1 class="flex-grow mr-10"><a href="index.html">Software Engineering Repository</a></h1>
+            <a class="mx-2 p-2 rounded-xl hover:bg-gray-700 hover:bg-opacity-20" href="about.html">about</a>
+            <a class="mx-3 p-2 rounded-xl hover:bg-gray-700 hover:bg-opacity-20" href="contact.html">contact</a>
+            <input spellcheck="false"
+                class="flex-grow max-w-xs appearance-none rounded-lg px-3 py-2 transition-colors text-base leading-tight md:text-md bg-black/5 dark:bg-gray-50/10  placeholder-gray-500 dark:placeholder-gray-400 border border-current"
+                type="search" placeholder="Search Repository" value="">
             <hr class="border-t border-custom-gray">
         </section>
         <hr class="border-t-5 border-custom-gray">
@@ -28,12 +27,11 @@
         <div class="w-72 h-screen  p-5">
             <h1 class="text-xl font-semibold mb-6">Courses(Level-Based)</h1>
             <nav>
-                <a href="./overview.html"
-                    class="block py-2 px-3 rounded bg-gray-700 bg-opacity-20">Overview</a>
+                <a href="./overview.html" class="block py-2 px-3 rounded bg-gray-700 bg-opacity-20">Overview</a>
                 <div>
                     <button onclick="toggleDropdown()"
                         class="flex justify-between items-center w-full py-2 px-3 rounded hover:bg-gray-700 hover:bg-opacity-20">
-                        Level (1) <span>&#9660;</span>
+                        Level (1) <span>▼</span>
                     </button>
                     <div id="dropdown" class="hidden flex flex-col pl-4">
                         <a href="#" class="py-2 px-3 rounded hover:bg-gray-700 hover:bg-opacity-20">Object Oriented
@@ -50,60 +48,48 @@
                 <div class="rounded subjects bg-opacity-20 bg-gray-700">
                     <div class="header mt-2 text-2xl text-center">Computing ethics</div>
                     <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
+                        <div class="desc text-sm text-center">A Computing ethics course explores the ethical
+                            considerations and challenges related to technology. By enrolling, you can expect to learn
+                            about privacy, cybersecurity, intellectual property, and social impact, among others.</div>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             learn more
                         </button>
                     </div>
                 </div>
                 <div class="rounded subjects bg-opacity-20 bg-gray-700">
-                    <div class="header mt-2 text-2xl text-center">Computing ethics</div>
+                    <div class="header mt-2 text-2xl text-center">calculus</div>
                     <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
+                        <div class="desc text-sm text-center">A calculus course teaches you the fundamentals of
+                            differential and integral calculus, enabling you to find rates of change, slopes of curves,
+                            and areas between curves. It equips you with mathematical tools to solve problems involving
+                            motion, optimization, and change in various fields, including physics, engineering, and
+                            economics.</div>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             learn more
                         </button>
                     </div>
-                </div><div class="rounded subjects bg-opacity-20 bg-gray-700">
-                    <div class="header mt-2 text-2xl text-center">Computing ethics</div>
+                </div>
+                <div class="rounded subjects bg-opacity-20 bg-gray-700">
+                    <div class="header mt-2 text-2xl text-center">satistics</div>
                     <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
+                        <div class="desc text-sm text-center">A statistics course teaches techniques for collecting,
+                            organizing, analyzing, and interpreting data. Students learn concepts like probability,
+                            hypothesis testing, regression analysis, and statistical modeling. It helps them understand
+                            how to make informed decisions based on data and develop critical thinking skills in
+                            quantitative analysis.</div>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             learn more
                         </button>
                     </div>
-                </div><div class="rounded subjects bg-opacity-20 bg-gray-700">
-                    <div class="header mt-2 text-2xl text-center">Computing ethics</div>
+                </div>
+                <div class="rounded subjects bg-opacity-20 bg-gray-700">
+                    <div class="header mt-2 text-2xl text-center">Introduction to programming</div>
                     <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            learn more
-                        </button>
-                    </div>
-                </div><div class="rounded subjects bg-opacity-20 bg-gray-700">
-                    <div class="header mt-2 text-2xl text-center">Computing ethics</div>
-                    <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            learn more
-                        </button>
-                    </div>
-                </div><div class="rounded subjects bg-opacity-20 bg-gray-700">
-                    <div class="header mt-2 text-2xl text-center">Computing ethics</div>
-                    <div class="content flex justify-center flex-col gap-3">
-                        <div class="desc text-sm text-center">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magni voluptate tempora laudantium, necessitatibus enim odio officia nihil quibusdam vitae libero nulla ullam temporibus cum provident soluta! Assumenda, expedita amet.
-                        </div>
+                        <div class="desc text-sm text-center">Introduction to programming courses provide a foundation
+                            for programming concepts and language syntax. Students will learn basic programming
+                            fundamentals, such as variables, loops, conditionals, and data structures. By enrolling in
+                            this course, you will gain a solid understanding of programming principles and be prepared
+                            for more advanced courses.</div>
                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             learn more
                         </button>
@@ -115,5 +101,8 @@
                 <span>Last updated on December 2, 2022</span>
             </div>
         </div>
+
+    </div>
 </body>
+
 </html>
