@@ -2,16 +2,20 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Neun";
-  src: url("NeueMachina-Regular.otf") format("opentype"); /* Adjust path as needed */
-  /* Consider adding more formats for better compatibility */
+  src: url("/MEDIA/NeueMachina-Regular.otf") format("opentype"); 
+
 }
 
 body {
-  background-color: rgb(17, 17, 17); /* Dark gray color */
-  color: rgb(243, 244, 246); /* Light gray color for the text */
-  font-family: "Neun", sans-serif; /* Fallback font */
+  background-color: rgb(17, 17, 17); 
+  color: rgb(243, 244, 246); 
+  font-family: "Neun", sans-serif; 
 }
 .selected {
   border-radius: 10px;
